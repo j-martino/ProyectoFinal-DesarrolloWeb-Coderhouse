@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
+    <script src="./assets/bootstrap/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Proyecto Final</title>
+</head>
+
+<body>
+    <!-- inicio header -->
+    <header>
+        <div class="container">
+            <a id="logo" href="index.html">MUSIC WEB</a>
+            <nav>
+                <a href="./index.html#populares-id">Populares</a>
+                <a href="./index.html#funcionamiento-id">Cómo funciona</a>
+                <a href="./index.html#categorias-id">Más categorías</a>
+                <div class="dropdown">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a href="#">
+                            <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg>
+                        </a>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./perfil-usuario.html">Perfil</a></li>
+                        <li><a class="dropdown-item" href="./chat.html">Mensajes</a></li>
+                        <li><a class="dropdown-item" href="./busqueda.html">Búsqueda</a></li>
+                        <li><a class="dropdown-item" href="./sign-up.html">¡Registrate!</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- inicio slide fotos + search -->
+    <section class="big">
+        <div class="big--kid--1">
+            <div class="slide--container">
+                <div class="slide--display">
+                    <div class="slide--img--1"></div>
+                    <div class="slide--img--2"></div>
+                    <div class="slide--img--3"></div>
+                    <div class="slide--img--4"></div>
+                </div>
+            </div>
+        </div>
+        <div class="big--kid--2">
+            <h1>"Lorem ipsum <span class="color-acento">dolor</span> sit amet, consectetur adipiscing elit"</h1>
+            <div class="search--enviar">
+                <input class="search" type="text" name="search" placeholder="escribe tu búsqueda aquí..." />
+                <input class="enviar" type="submit" value="🔎" />
+            </div>
+        </div>
+    </section>
+    <!-- inicio categorias populares -->
+    <section id="populares-id" class="populares">
+        <h2>POPULARES</h2>
+        <div class="populares--cards">
+            <a href="index.html">
+                <div class="populares--cards--img1"></div>
+            </a>
+            <a href="index.html">
+                <div class="populares--cards--img2"></div>
+            </a>
+            <a href="index.html">
+                <div class="populares--cards--img3"></div>
+            </a>
+            <a href="index.html">
+                <div class="populares--cards--img4"></div>
+            </a>
+            <a href="index.html">
+                <div class="populares--cards--img5"></div>
+            </a>
+        </div>
+    </section>
+    <!-- inicio funcionamiento -->
+    <section id="funcionamiento-id" class="funcionamiento">
+        <h2>¿CÓMO FUNCIONA?</h2>
+        <section class="funcionamiento-slider-media-cont">
+            <section class="funcionamiento-slider-cont">
+                <section class="funcionamiento-slider">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-item-cont">
+                                    <h2>Encontrá</h2>
+                                    <p>1 "Nuestra amplia lista de categorías y profesionales tiene todo lo que necesitás
+                                        para hacer realidad tu proyecto."</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item-cont">
+                                    <h2>Elegí tu servicio</h2>
+                                    <p>2 "Cada uno de nuestros profesionales tienen distintos servicios que se ajustan a
+                                        tu presupuesto."</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item-cont">
+                                    <h2>Planeá</h2>
+                                    <p>3 "Una vez estés en contacto con tu profesional de confianza podrán armar un plan
+                                        para trabajar de manera eficiente"</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item-cont">
+                                    <h2>Revisá</h2>
+                                    <p>4 "Vas a tener distintas instancias para revisar el progreso del profesional con
+                                        el que estés trabajando."</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item-cont">
+                                    <h2>¡Disfrutá!</h2>
+                                    <p>5 "Una vez estés conforme con tu proyecto y el trabajo del profesional, sólo te
+                                        falta disfrutar!"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </section>
+            </section>
+            <section class="funcionamiento-media-cont">
+                <section class="funcionamiento-media">
+                    <video src="./assets/videos/funcionamiento-media.mp4" controls loop muted autoplay></video>
+                </section>
+            </section>
+        </section>
+    </section>
+    <!-- inicio mas categorias -->
+    <section id="categorias-id"" class="categorias">
+        <h2>¡MÁS CATEGORÍAS!</h2>
+        <div class="categorias-cards">
+            <div class="categorias-card">
+                <h3>Instrumentos</h3>
+                <ul>
+                    <li><a href="#">Guitarra</a></li>
+                    <li><a href="#">Guitarra</a></li>
+                    <li><a href="#">Guitarra</a></li>
+                    <li><a href="#">Guitarra</a></li>
+                    <li><a href="#">Guitarra</a></li>
+                    <li><a href="#">Guitarra</a></li>
+                </ul>
+            </div>
+            <div class="categorias-card">
+                <h3>Audio</h3>
+                <ul>
+                    <li><a href="#">Mastering</a></li>
+                    <li><a href="#">Mastering</a></li>
+                    <li><a href="#">Mastering</a></li>
+                    <li><a href="#">Mastering</a></li>
+                    <li><a href="#">Mastering</a></li>
+                    <li><a href="#">Mastering</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Music Web - Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
