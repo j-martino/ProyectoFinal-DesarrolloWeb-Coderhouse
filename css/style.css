@@ -455,7 +455,8 @@ h1 {
   align-items: center;
   text-align: center;
 }
-.resultado--info--precio div h3, .resultado--info--precio div h5 {
+.resultado--info--precio div h3,
+.resultado--info--precio div h5 {
   margin: 0;
 }
 
@@ -1115,6 +1116,9 @@ h1 {
   }
   .galeria--scroll .scroll-grandad {
     overflow-y: hidden;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
   .galeria--scroll .scroll-dad {
     flex-direction: row;
@@ -1162,11 +1166,6 @@ h1 {
   }
   .acc-bottom .btn {
     width: 300px;
-  }
-  .scroll-grandad {
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
   }
   .categorias-card {
     margin: 0;

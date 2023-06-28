@@ -522,7 +522,8 @@ h1 {
         align-items: center;
         text-align: center;
 
-        h3, h5{
+        h3,
+        h5 {
             margin: 0;
         }
     }
@@ -1273,6 +1274,9 @@ h1 {
 
         .scroll-grandad {
             overflow-y: hidden;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
         }
 
         .scroll-dad {
@@ -1333,12 +1337,6 @@ h1 {
 
     .acc-bottom .btn {
         width: 300px;
-    }
-
-    .scroll-grandad {
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
     }
 
     .categorias-card {
