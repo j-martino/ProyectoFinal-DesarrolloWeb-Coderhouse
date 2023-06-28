@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="En nuestra web podrás encontrar profesionales de la música y el audio para tus proyectos.">
+    <meta name="keywords" content="musica, audio, instrumentos, musico profesional, mastering, mezcla, guitarra, bateria, bajo, violin">
+    <!-- archivos Bootstrap -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- css propio -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- info de la web -->
+    <title>MÚSICAr | Perfil</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon/favicon.png">
+</head>
+
+<body>
+    <!-- inicio header -->
+    <header>
+        <div class="container">
+            <a id="logo" href="../index.html">MÚSICAr</a>
+            <nav>
+                <a href="../index.html#populares-id">Populares</a>
+                <a href="../index.html#funcionamiento-id">Cómo funciona</a>
+                <a href="../index.html#categorias-id">Más categorías</a>
+                <div class="dropdown">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a href="#">
+                            <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg>
+                        </a>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./perfil-usuario.html">Perfil</a></li>
+                        <li><a class="dropdown-item" href="./chat.html">Mensajes</a></li>
+                        <li><a class="dropdown-item" href="./busqueda.html">Búsqueda</a></li>
+                        <li><a class="dropdown-item" href="./sign-up.html">¡Registrate!</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- inicio informacion usuario 1 -->
+    <section class="perfil container">
+        <section class="info--1">
+            <section class="identidad">
+                <div class="foto--perfil">
+                    <div class="foto--perfil--img"></div>
+                </div>
+                <div class="identidad-info">
+                    <h2 class="nombre-real">Juan Perez</h2>
+                    <h2 class="nombre-arroba">@usuario</h2>
+                    <h2 class="puntuacion" aria-label="puntuación de usuario">⭐⭐⭐⭐⭐ (12)</h2>
+                </div>
+            </section>
+            <section class="informacion">
+                <h4 class="ubicacion">📍 CABA, Argentina</h4>
+                <h4 class="tiempo-entrega" aria-label="tiempo de entrega">⌛ Tres semanas</h4>
+                <h4 class="verificado">✅ Usuario verificado</h4>
+            </section>
+        </section>
+        <!-- inicio galeria -->
+        <section class="galeria" aria-label="galería multimedia de usuario">
+            <section class="galeria--display">
+                <div class="display-grandad">
+                    <div class="display-dad">
+                        <div id="galeria-item-1" class="display-kid"><video src="../assets/videos/profile-video-1.mp4"
+                                controls autoplay muted loop></video></div>
+                        <div id="galeria-item-2" class="display-kid"><video src="../assets/videos/profile-video-2.mp4"
+                                controls loop></video></div>
+                        <div id="galeria-item-3" class="display-kid"><video src="../assets/videos/profile-video-3.mp4"
+                                controls loop></video></div>
+                        <div id="galeria-item-4" class="display-kid"><video src="../assets/videos/profile-video-4.mp4"
+                                controls loop></video></div>
+                    </div>
+                </div>
+            </section>
+            <section class="galeria--scroll">
+                <div class="scroll-grandad">
+                    <div class="scroll-dad">
+                        <a href="#galeria-item-1">
+                            <div class="scroll-kid">
+                                <img src="../assets/images/perfil-videos-thumbnail/profile-video-1-thumbnail.jpg">
+                            </div>
+                        </a>
+                        <a href="#galeria-item-2">
+                            <div class="scroll-kid">
+                                <img src="../assets/images/perfil-videos-thumbnail/profile-video-2-thumbnail.jpg">
+                            </div>
+                        </a>
+                        <a href="#galeria-item-3">
+                            <div class="scroll-kid">
+                                <img src="../assets/images/perfil-videos-thumbnail/profile-video-3-thumbnail.jpg">
+                            </div>
+                        </a>
+                        <a href="#galeria-item-4">
+                            <div class="scroll-kid">
+                                <img src="../assets/images/perfil-videos-thumbnail/profile-video-4-thumbnail.jpg">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- inicio informacion usuario 2 -->
+        <section class="info--2">
+            <section class="info--2--a">
+                <section class="biografia">
+                    <h3>Biografía</h3>
+                    <div class="biografia-text">
+                        <p>Mi nombre es Juan. Soy un guitarrista con 15 años de experiencia tocando en varios proyectos y grabando para diferentes artistas y productores de mi país. Soy productor musical y también toco otros instrumentos, pero la guitarra es lo que más me apasiona.</p>
+                    </div>
+                </section>
+                <section class="seccion--planes">
+                    <h3>Planes</h3>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Estándar
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="acc-top">
+                                        <div class="acc1">
+                                            <ul>
+                                                <li>1 pista de guitarra DI y 1 pista "amp" ·</li>
+                                                <li>1 canción de hasta 3:30 minutos ·</li>
+                                                <li>1 revisión ·</li>
+                                                <li>Uso comercial ·</li>
+                                            </ul>
+                                        </div>
+                                        <div class="divisor"></div>
+                                        <div class="acc2">
+                                            <h3>$10 USD</h3>
+                                        </div>
+                                    </div>
+                                    <div class="acc-bottom">
+                                        <a class="btn btn-primary" href="#" role="button">Contratar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Profesional
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="acc-top">
+                                        <div class="acc1">
+                                            <ul>
+                                                <li>1 pista de guitarra DI y 1 pista "amp" ·</li>
+                                                <li>3 canciones de hasta 4:30 minutos ·</li>
+                                                <li>3 revisión ·</li>
+                                                <li>Uso comercial ·</li>
+                                            </ul>
+                                        </div>
+                                        <div class="divisor"></div>
+                                        <div class="acc2">
+                                            <h3>$35 USD</h3>
+                                        </div>
+                                    </div>
+                                    <div class="acc-bottom">
+                                        <a class="btn btn-primary" href="#" role="button">Contratar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="info--2--b">
+                <section class="opiniones">
+                    <h3>Opiniones</h3>
+                    <div class="opiniones-1">
+                        <div class="foto-perfil-cliente-cont">
+                            <div class="foto-perfil-cliente">
+                            </div>
+                        </div>
+                        <h4 class="op">@usuario-cliente</h4>
+                        <h5 class="op" aria-label="calificación del cliente">⭐⭐⭐⭐⭐</h5>
+                        <h6 class="tiempo-hace op">hace un mes</h6>
+                    </div>
+                    <p>No tengo palabras evaluar el trabajo de Juan en la guitarra. Lo he llamado muchas veces y siempre ha entregado grabaciones de guitarra perfectas tanto en términos de sincronización como de ideas, sonido o ritmo. Tiene un talento excepcional.</p>
+                </section>
+                <section class="contacto">
+                    <h3>Contacto</h3>
+                    <div class="form-cont">
+                        <form>
+                            <textarea
+                                placeholder="Si tenés alguna duda podés contactarme por acá y las resolveré para que podamos trabajar juntos..."></textarea>
+                            <div class="acc-bottom">
+                                <button type="submit" class="btn btn-primary">¡Mandame un mensaje!</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </section>
+    <!-- inicio mas categorias -->
+    <section id="categorias" class="categorias">
+        <h2>¡MÁS CATEGORÍAS!</h2>
+        <div class="categorias-cards">
+            <div class="categorias-card">
+                <h3>Instrumentos</h3>
+                <ul>
+                    <li><a href="#">Guitarra</a></li>
+                    <li><a href="#">Guitarra</a></li>
+                    <li><a href="#">Guitarra</a></li>
+                    <li><a href="#">Guitarra</a></li>
+                    <li><a href="#">Guitarra</a></li>
+                    <li><a href="#">Guitarra</a></li>
+                </ul>
+            </div>
+            <div class="categorias-card">
+                <h3>Audio</h3>
+                <ul>
+                    <li><a href="#">Mastering</a></li>
+                    <li><a href="#">Mastering</a></li>
+                    <li><a href="#">Mastering</a></li>
+                    <li><a href="#">Mastering</a></li>
+                    <li><a href="#">Mastering</a></li>
+                    <li><a href="#">Mastering</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>MusicAr - Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>

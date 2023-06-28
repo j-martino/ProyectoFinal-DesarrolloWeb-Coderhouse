@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="En nuestra web podrás encontrar profesionales de la música y el audio para tus proyectos.">
+    <meta name="keywords" content="musica, audio, instrumentos, musico profesional, mastering, mezcla, guitarra, bateria, bajo, violin">
+    <!-- archivos Bootstrap -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- css propio -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- info de la web -->
+    <title>MÚSICAr | ¡Registrate!</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon/favicon.png">
+</head>
+
+<body>
+    <!-- inicio header -->
+    <header>
+        <div class="container">
+            <a id="logo" href="../index.html">MÚSICAr</a>
+            <nav>
+                <a href="../index.html#populares-id">Populares</a>
+                <a href="../index.html#funcionamiento-id">Cómo funciona</a>
+                <a href="../index.html#categorias-id">Más categorías</a>
+                <div class="dropdown">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a href="#">
+                            <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg>
+                        </a>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./perfil-usuario.html">Perfil</a></li>
+                        <li><a class="dropdown-item" href="./chat.html">Mensajes</a></li>
+                        <li><a class="dropdown-item" href="./busqueda.html">Búsqueda</a></li>
+                        <li><a class="dropdown-item" href="./sign-up.html">¡Registrate!</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- inicio formulario -->
+    <section class="formulario-registro">
+        <section class="vh-100" style="background-color: #eee;">
+            <div class="container h-100">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-lg-12 col-xl-7">
+                  <div class="card text-black" style="border-radius: 25px;">
+                    <div class="card-body p-md-5">
+                      <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-6 col-xl-8 order-2 order-lg-1">
+          
+                          <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">¡Registrate!</p>
+          
+                          <form class="mx-1 mx-md-4">
+          
+                            <div class="d-flex flex-row align-items-center mb-4">
+                              <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                              <div class="form-outline flex-fill mb-0">
+                                <input type="text" id="form3Example1c" class="form-control" />
+                                <label class="form-label" for="form3Example1c">Tu Nombre</label>
+                              </div>
+                            </div>
+          
+                            <div class="d-flex flex-row align-items-center mb-4">
+                              <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                              <div class="form-outline flex-fill mb-0">
+                                <input type="email" id="form3Example3c" class="form-control" />
+                                <label class="form-label" for="form3Example3c">Tu Email</label>
+                              </div>
+                            </div>
+          
+                            <div class="d-flex flex-row align-items-center mb-4">
+                              <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                              <div class="form-outline flex-fill mb-0">
+                                <input type="password" id="form3Example4c" class="form-control" />
+                                <label class="form-label" for="form3Example4c">Contraseña</label>
+                              </div>
+                            </div>
+          
+                            <div class="d-flex flex-row align-items-center mb-4">
+                              <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                              <div class="form-outline flex-fill mb-0">
+                                <input type="password" id="form3Example4cd" class="form-control" />
+                                <label class="form-label" for="form3Example4cd">Repetí tu contraseña</label>
+                              </div>
+                            </div>
+          
+                            <div class="form-check d-flex justify-content-center mb-5">
+                              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                              <label class="form-check-label" for="form2Example3">
+                                Acepto los<a class="text-secondary" href="#!">Términos y Condiciones</a>
+                              </label>
+                            </div>
+          
+                            <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                              <button type="button" class="btn btn-primary btn-lg btn-signup">Unirse</button>
+                            </div>
+          
+                          </form>
+          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    </section>
+    <footer>
+        <p>MusicAr - Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>

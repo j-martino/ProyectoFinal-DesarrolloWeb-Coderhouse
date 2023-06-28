@@ -5,17 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
-    <script src="./assets/bootstrap/js/bootstrap.bundle.js"></script>
-    <link rel="stylesheet" href="./assets/style.css">
-    <title>Proyecto Final</title>
+    <!-- SEO -->
+    <meta name="description" content="En nuestra web podrás encontrar profesionales de la música y el audio para tus proyectos.">
+    <meta name="keywords" content="musica, audio, instrumentos, musico profesional, mastering, mezcla, guitarra, bateria, bajo, violin">
+    <!-- archivos Bootstrap -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- css propio -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- info de la web -->
+    <title>MÚSICAr</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.png">
 </head>
 
 <body>
     <!-- inicio header -->
     <header>
         <div class="container">
-            <a id="logo" href="index.html">MUSIC WEB</a>
+            <a id="logo" href="index.html">MÚSICAr</a>
             <nav>
                 <a href="./index.html#populares-id">Populares</a>
                 <a href="./index.html#funcionamiento-id">Cómo funciona</a>
@@ -32,10 +39,10 @@
                         </a>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./perfil-usuario.html">Perfil</a></li>
-                        <li><a class="dropdown-item" href="./chat.html">Mensajes</a></li>
-                        <li><a class="dropdown-item" href="./busqueda.html">Búsqueda</a></li>
-                        <li><a class="dropdown-item" href="./sign-up.html">¡Registrate!</a></li>
+                        <li><a class="dropdown-item" href="./pages/perfil-usuario.html">Perfil</a></li>
+                        <li><a class="dropdown-item" href="./pages/chat.html">Mensajes</a></li>
+                        <li><a class="dropdown-item" href="./pages/busqueda.html">Búsqueda</a></li>
+                        <li><a class="dropdown-item" href="./pages/sign-up.html">¡Registrate!</a></li>
                     </ul>
                 </div>
             </nav>
@@ -43,7 +50,7 @@
     </header>
     <!-- inicio slide fotos + search -->
     <section class="big">
-        <div class="big--kid--1">
+        <div class="big--kid--1" aria-label="carrusel de imágenes">
             <div class="slide--container">
                 <div class="slide--display">
                     <div class="slide--img--1"></div>
@@ -54,10 +61,10 @@
             </div>
         </div>
         <div class="big--kid--2">
-            <h1>"Lorem ipsum <span class="color-acento">dolor</span> sit amet, consectetur adipiscing elit"</h1>
+            <h1>Encontrá ya mismo al <span class="color-acento">profesional</span> que necesitás</h1>
             <div class="search--enviar">
-                <input class="search" type="text" name="search" placeholder="escribe tu búsqueda aquí..." />
-                <input class="enviar" type="submit" value="🔎" />
+                <input class="search" type="text" name="search" aria-label="área de búsqueda" placeholder="escribe tu búsqueda aquí..." />
+                <input class="enviar" type="submit" aria-label="buscar" value="🔎" />
             </div>
         </div>
     </section>
@@ -65,19 +72,19 @@
     <section id="populares-id" class="populares">
         <h2>POPULARES</h2>
         <div class="populares--cards">
-            <a href="index.html">
+            <a href="index.html" aria-label="guitarrista">
                 <div class="populares--cards--img1"></div>
             </a>
-            <a href="index.html">
+            <a href="index.html" aria-label="baterista">
                 <div class="populares--cards--img2"></div>
             </a>
-            <a href="index.html">
+            <a href="index.html" aria-label="ingeniero de mezcla">
                 <div class="populares--cards--img3"></div>
             </a>
-            <a href="index.html">
+            <a href="index.html" aria-label="cantante">
                 <div class="populares--cards--img4"></div>
             </a>
-            <a href="index.html">
+            <a href="index.html" aria-label="violinista">
                 <div class="populares--cards--img5"></div>
             </a>
         </div>
@@ -88,17 +95,17 @@
         <section class="funcionamiento-slider-media-cont">
             <section class="funcionamiento-slider-cont">
                 <section class="funcionamiento-slider">
-                    <div id="carouselExampleIndicators" class="carousel slide">
+                    <div id="carouselFuncionamiento" class="carousel slide">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            <button type="button" data-bs-target="#carouselFuncionamiento" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            <button type="button" data-bs-target="#carouselFuncionamiento" data-bs-slide-to="1"
                                 aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            <button type="button" data-bs-target="#carouselFuncionamiento" data-bs-slide-to="2"
                                 aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            <button type="button" data-bs-target="#carouselFuncionamiento" data-bs-slide-to="3"
                                 aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            <button type="button" data-bs-target="#carouselFuncionamiento" data-bs-slide-to="4"
                                 aria-label="Slide 5"></button>
                         </div>
                         <div class="carousel-inner">
@@ -138,12 +145,12 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFuncionamiento"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselFuncionamiento"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
@@ -159,7 +166,7 @@
         </section>
     </section>
     <!-- inicio mas categorias -->
-    <section id="categorias-id"" class="categorias">
+    <section id="categorias-id" class="categorias">
         <h2>¡MÁS CATEGORÍAS!</h2>
         <div class="categorias-cards">
             <div class="categorias-card">
@@ -187,7 +194,7 @@
         </div>
     </section>
     <footer>
-        <p>Music Web - Todos los derechos reservados</p>
+        <p>MusicAr - Todos los derechos reservados</p>
     </footer>
 </body>
 
