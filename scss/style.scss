@@ -41,15 +41,20 @@ a {
     transition: .2s;
 }
 
-footer {
-    text-align: right;
-    color: rgb(122, 122, 122);
-}
+footer{
+    display: flex;
+    justify-content: space-between;
 
-footer p {
-    font-size: 13px;
-    padding: 5px 5px;
-    margin: 0;
+    p, a {
+        color: rgb(122, 122, 122);
+        font-size: 13px;
+        padding: 5px 5px;
+        margin: 0;
+    }
+    
+    .footer-p2{
+        display: none;
+    }
 }
 
 /* inicio header nav */
@@ -1148,6 +1153,34 @@ h1 {
     }
 }
 
+/* SITE-MAP.html */
+
+.mapa-cont{
+    height: calc(100vh - 101.5px);
+}
+
+.mapa-titulo{
+    height: 85px;
+    width: 100%;
+    background-color: #8a7272;
+    margin-bottom: 5px;
+
+    a{
+        color: black;
+        font-size: .8em;
+    }
+}
+
+.mapa-link{
+    li{
+        list-style: none;
+    }
+    a{
+        color: rgb(0, 0, 0);
+    }
+}
+
+
 /* MEDIA QUERIES */
 /////////////////////////////////////////////////////////////////
 
@@ -1228,6 +1261,46 @@ h1 {
     }
 }
 
+@media (max-width: 1130px) {
+    .info--1 {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .informacion {
+        border-left: none;
+        padding-block: 25px;
+    }
+
+    .info--2 {
+        height: fit-content;
+    }
+
+    .info--2--a {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .info--2--a .biografia,
+    .info--2--a .seccion--planes {
+        width: 100%;
+    }
+
+    .info--2--b {
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+
+    .info--2--b .opiniones,
+    .info--2--b .contacto {
+        width: 100%;
+    }
+
+    .contacto {
+        padding-bottom: 50px;
+    }
+}
+
 @media (max-width: 800px) {
 
     /* Global */
@@ -1285,46 +1358,6 @@ h1 {
     }
 }
 
-@media (max-width: 1130px) {
-    .info--1 {
-        flex-direction: column;
-        height: fit-content;
-    }
-
-    .informacion {
-        border-left: none;
-        padding-block: 25px;
-    }
-
-    .info--2 {
-        height: fit-content;
-    }
-
-    .info--2--a {
-        flex-direction: column;
-        height: fit-content;
-    }
-
-    .info--2--a .biografia,
-    .info--2--a .seccion--planes {
-        width: 100%;
-    }
-
-    .info--2--b {
-        flex-direction: column-reverse;
-        height: fit-content;
-    }
-
-    .info--2--b .opiniones,
-    .info--2--b .contacto {
-        width: 100%;
-    }
-
-    .contacto {
-        padding-bottom: 50px;
-    }
-}
-
 @media (max-width: 530px) {
     .foto--perfil {
         padding-right: 15px;
@@ -1351,5 +1384,15 @@ h1 {
 
     .op {
         padding-right: 0;
+    }
+
+    footer{
+        .footer-p2{
+            display: block;
+        }
+
+        .footer-p1{
+            display: none;
+        }
     }
 }
